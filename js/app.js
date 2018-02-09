@@ -1,10 +1,12 @@
-var app = angular.module ("cseVote", ['ui.router',]);
+'use strict';
+var app = angular.module("cseVote", ['ui.router',]);
 
 app.config(['$urlRouterProvider','$stateProvider','$locationProvider', function($urlRouterProvider,$stateProvider,$locationProvider){
-	$locationProvider.html5Mode({
-	  enabled: true,
-	  requireBase: false
-	});
+	// $locationProvider.html5Mode({
+	//   enabled: true,
+	//   requireBase: false
+	// });
+	
 	$urlRouterProvider.otherwise('/login');
 
 	$stateProvider

@@ -6,13 +6,13 @@ app.config(['$urlRouterProvider','$stateProvider','$locationProvider', function(
 	//   enabled: true,
 	//   requireBase: false
 	// });
-	
+
 	$urlRouterProvider.otherwise('/login');
 
 	$stateProvider
 	.state('login', {
 		url: '/login',
-		templateUrl: './partials/login.html',
+		templateUrl: 'partials/login.html',
 		data: {
 			pageTitle: 'chat'
 		}
@@ -20,7 +20,7 @@ app.config(['$urlRouterProvider','$stateProvider','$locationProvider', function(
 
 	.state('register', {
 		url: '/register',
-		templateUrl: './partials/register.html',
+		templateUrl: 'partials/register.html',
 		data: {
 			pageTitle: 'register'
 		}
@@ -28,14 +28,14 @@ app.config(['$urlRouterProvider','$stateProvider','$locationProvider', function(
 
 	.state('categories', {
 		url: '/categories',
-		templateUrl: './partials/categories.html',
+		templateUrl: 'partials/categories.html',
 		data: {
 			pageTitle: 'categories'
 		}
 	})
 	.state('contestant', {
 		url: '/contestant',
-		templateUrl: './contestant.html',
+		templateUrl: 'contestant.html',
 		data: {
 			pageTitle: 'contestant'
 		}

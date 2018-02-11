@@ -7,7 +7,7 @@ app.config(['$urlRouterProvider','$stateProvider','$locationProvider', function(
 	//   requireBase: false
 	// });
 
-	$urlRouterProvider.otherwise('/login');
+	$urlRouterProvider.otherwise('/categories');
 
 	$stateProvider
 	.state('login', {
@@ -35,7 +35,7 @@ app.config(['$urlRouterProvider','$stateProvider','$locationProvider', function(
 	})
 	.state('contestant', {
 		url: '/contestant',
-		templateUrl: 'contestant.html',
+		templateUrl: 'partials/contestant.html',
 		data: {
 			pageTitle: 'contestant'
 		}

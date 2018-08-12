@@ -7,10 +7,10 @@ define('DB_DATABASE', 'cse');
 
 
 //replace the valid_email with a valid active gmail address
-define('SMTP_USER', 'musa.joshua@lmu.edu.ng');
+define('SMTP_USER', '');
 
 //replace password with the password of the same account
-define('SMTP_PASSWORD', '41ea45df');
+define('SMTP_PASSWORD', '');
 
 // domain name
 define('HOST', '');
